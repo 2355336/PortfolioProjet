@@ -34,7 +34,7 @@
 /* ====== CONTENU PRINCIPAL ====== */
 .intro {
     height: 1000px;
-    background: linear-gradient(120deg, #0F2854, #222);
+    background: linear-gradient(90deg, #0F2854, #222);
     color: #fff;
 
     display: flex;
