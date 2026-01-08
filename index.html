@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Projet Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
 </head>
 <body>
 
     <!-- EN TETE -->
     <header class="header">
-        <div class="logo">MonPortfolio</div>
+        <div class="logo"> <a href="#intro"> MonPortfolio</a></div>
         <nav class="nav">
             <a href="#about">À propos</a>
             <a href="#projects">Projets</a>
@@ -20,7 +22,7 @@
     </header>
 
     <!-- INTRODUCTION -->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="intro-text">
             <h1>Bonjour, <br> je suis <span>Thanh Nam Nguyen</span></h1>
             <p>Étudiant à l'Université de Sherbrooke</p>
@@ -43,14 +45,74 @@
     </h3>
     </section>
 
+    <!-- PROJETS -->
+    <section class="intro">
+        <h1 id="projects">Projets</h1>
+
+        <!-- ACCORDEON -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Application mobile permettant de traquer des tâches
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Développer une application mobile en Flutter avec une interface bilingue (FR/EN) </li>
+                        <li>Implémenter appels réseau avec la librairie Dio afin de communiquer avec un serveur Spring Boot</li>
+                        <li>Implémenter l&apos;authentification via Firebase (compte Google avec un mot de passe)</li>
+                        <li>Implémenter Firestore afin de stocker les données des utilisateurs et des tâches</li>
+                        <li>Gérer les validations de formulaire, les erreurs réseau et l&apos;affichage des messages d&apos;erreurs dynamique</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Jeu de cartes web “Super Cartes Infinies”
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li> Développer l&apos;authentification complète (inscription, connexion, déconnexion) avec ASP.NET Web et Angular</li> 
+                        <li> Ajouter et afficher des pouvoirs à des cartes et les afficher dans Angular avec des animations lors du clic</li>
+                        <li> Implémenter un système de chat avec SignalR pour permettre aux utilisateurs de communiquer</li>
+                        <li> Collaborer en équipe de 4 en utilisant Azure DevOps et GitKraken</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Projets #3
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- FOOTER -->
     <footer class="footer">
         <p>© 2026 - Thanh Nam Nguyen. Tous droits réservés.</p>
         <div class="socials">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <a href="https://www.linkedin.com/in/thanh-nam-nguyen-010008388/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/2355336" target="_blank">GitHub</a>
         </div>
     </footer>
 
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

@@ -5,6 +5,14 @@
     font-family: Arial, sans-serif;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px; /* hauteur de ton header */
+    visibility: hidden;
+}
+
+
 /* ====== EN TETE ====== */
 .header {
     display: flex;
@@ -12,6 +20,15 @@
     align-items: center;
     padding: 20px 50px;
     background-color: #111;
+    position: fixed;
+    width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Garamond', serif;
+    font-size: 20px;
 }
 
 .logo {
@@ -40,7 +57,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 80px;
 }
 
@@ -89,10 +105,18 @@ img {
 
 /* ====== A PROPOS DE MOI ====== */
 #about {
+    min-height: 100vh; /* la section prend toute la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre verticalement le contenu */
+    align-items: center;     /* centre horizontalement */
+    text-align: center;
+    scroll-margin-top: 50px; /* décale le scroll sous le header fixe */
     padding: 80px 50px;
     margin-bottom: 20px;
     font-family: 'Garamond', serif;
 }
+
 #text {
     padding: 0 50px 50px 50px;
     line-height: 2.0;
@@ -124,3 +148,16 @@ img {
 .socials a:hover {
     color: #00adb5;
 }
+
+/* ===== PROJETS ====== */
+
+#projects {
+    padding: 80px 50px;
+    margin-bottom: 20px;
+    font-family: 'Garamond', serif;
+}
+
+.accordion {
+    width: 100%;
+}
+
