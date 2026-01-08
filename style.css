@@ -57,15 +57,21 @@
 .intro h1 {
     font-size: 48px;
     margin-bottom: 15px;
+    margin-right: 20px;
+    font-family: 'Garamond', serif;
 }
 
+/* Nom */
 .intro span {
     color: #BDE8F5;
+    font-family: 'Garamond', serif;
 }
 
 .intro p {
     font-size: 20px;
     margin-bottom: 30px;
+    font-family: 'Garamond', serif;
+
 }
 
 .btn {
@@ -81,6 +87,18 @@ img {
     height: auto;
 }
 
+/* ====== A PROPOS DE MOI ====== */
+#about {
+    padding: 80px 50px;
+    margin-bottom: 20px;
+    font-family: 'Garamond', serif;
+}
+#text {
+    padding: 0 50px 50px 50px;
+    line-height: 2.0;
+    font-family: 'Garamond', serif;
+    margin-right: 100px;
+}
 
 /* FOOTER */
 .footer {
